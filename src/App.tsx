@@ -1,13 +1,17 @@
 import React, { useState } from "react";
-import reactLogo from "./assets/react.svg";
+import { MainLayout } from "./layouts/MainLayout.component";
+
+import { Navbar } from "./components/navbar/Navbar.component";
+import { Hero } from "./components/hero/Hero.component";
+import { Main } from "./components/main/Main.component";
 
 function App() {
-  const [count, setCount] = useState<number>(0);
-
   return (
-    <div className="App">
-      <p>Awikwok Gaming</p>
-    </div>
+    <MainLayout>
+      <Navbar />
+      <Hero />
+      <Main />
+    </MainLayout>
   );
 }
 
