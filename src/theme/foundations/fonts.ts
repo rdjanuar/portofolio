@@ -3,9 +3,10 @@ export const fonts: object = {
 };
 
 export const fontSizes: object = {
-  bodyBase: "0.875rem",
+  bodyBase: "1rem",
   bodyLarge: "1.25rem",
   bodySmall: "0.75rem",
+  bodyXSmall: "0.675rem",
   bodyXl: "2.97rem",
   heading: "1.875rem",
 };

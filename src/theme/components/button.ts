@@ -18,16 +18,6 @@ export const Button: ComponentStyleConfig = {
       fontSize: "0.6rem",
     },
   },
-  variants: {
-    primary: {
-      bg: "#5D5EE7",
-    },
-    secondary: {
-      bg: "#1E293B",
-    },
-    tertiary: {
-      bg: "#C7D2FE",
-    },
-  },
+
   defaultProps: {},
 };

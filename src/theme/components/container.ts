@@ -13,7 +13,6 @@ export const Container: ComponentStyleConfig = {
     },
     lg: {
       maxW: "1920px",
-      mt: "6",
     },
   },
   defaultProps: {

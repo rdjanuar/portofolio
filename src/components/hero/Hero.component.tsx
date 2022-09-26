@@ -1,73 +1,98 @@
 import React from "react";
+import { Flex, Text, Button, Img, VStack, HStack } from "@chakra-ui/react";
 import heroImage from "../../assets/hero2.png";
 
-import {
-  Flex,
-  Text,
-  Button,
-  Img,
-  VStack,
-  HStack,
-  Stack,
-} from "@chakra-ui/react";
-
-export const Hero = () => {
-  return (
-    <Flex
-      alignItems={"center"}
-      justifyContent={["center", "center", "space-around"]}
-      flexDirection={["column", "column", "row"]}
+export const Hero = () => (
+  <Flex
+    alignItems="center"
+    justifyContent={{
+      xl: "space-between",
+      "2xl": "space-around",
+      base: "space-around",
+    }}
+    h="100vh"
+    mx={{
+      lg: "4.5rem",
+      xl: "1.5rem",
+      "2xl": "10.4rem",
+    }}
+    flexDirection={["column", "column", "column", "row"]}
+  >
+    <Img
+      src={heroImage}
+      alt="hero-image"
+      w={["350px", "545px", "545px"]}
+      h={["300px", "444px", "444px"]}
+      transform="auto"
+      translateX={{
+        base: "-8%",
+        xl: "0rem",
+        "2xl": "0.44rem",
+      }}
+      translateY={{
+        lg: "-2.5rem",
+      }}
+      objectFit="cover"
+    />
+    <VStack
+      alignItems="start"
+      w={{
+        lg: "550px",
+      }}
+      gap={5}
+      transform="auto"
+      translateX={{
+        base: "0.4rem",
+        lg: "-0.05rem",
+        "2xl": "-0.55rem",
+      }}
     >
-      <Img
-        src={heroImage}
-        alt={"hero-image"}
-        w={["350px", "545px", "545px"]}
-        h={["350px", "444px", "444px"]}
-        transform={["translateX(-2rem)", null, null]}
-        objectFit={"cover"}
-      />
-      <VStack
-        alignItems={["center", "center", "start"]}
-        w={"550px"}
-        gap={5}
-        transform={"translateY(3rem)"}
+      <Text
+        fontWeight="semibold"
+        fontSize={{
+          base: "bodyBase",
+          sm: "bodyLarge",
+          lg: "heading",
+          xl: "bodyXl",
+        }}
+        lineHeight={{ sm: "bodyLarge", lg: "heading", xl: "58.09px" }}
+        color="base.secondary.500"
       >
-        <Text
-          fontWeight={"semibold"}
-          fontSize={["bodyBase", "bodyLarge", "bodyXl"]}
-          lineHeight={{ sm: "bodyLarge", lg: "58.09px" }}
-          color={"base.secondary.500"}
+        Manajemen Sekolah Jadi{" "}
+        <span style={{ color: "#0453EF" }}>Lebih Mudah!</span>
+      </Text>
+      <Text
+        fontWeight="medium"
+        w={{ base: "295px", sm: "369px", lg: "100%" }}
+        color="neutral.40"
+        fontSize={["bodySmall", "bodyBase", "bodyLarge"]}
+        lineHeight={["bodySmall", "bodyBase", "bodyLarge"]}
+      >
+        Rasakan kenyamanan dan kemudahan dalam mengelola seluruh proses
+        operasional sekolah...
+      </Text>
+      <HStack spacing={4}>
+        <Button
+          size={["secondary", "primary", "primary"]}
+          textColor="white"
+          colorScheme="base.primary"
+          _hover={{
+            bg: "#023AA9",
+          }}
         >
-          Manajemen Sekolah Jadi{" "}
-          <span style={{ color: "#6F94D1" }}>Lebih Mudah!</span>
-        </Text>
-        <Text
-          fontWeight={"medium"}
-          w={["259px", "369px", "100%"]}
-          color={"neutral.40"}
-          fontSize={["bodySmall", "bodyBase", "bodyLarge"]}
-          lineHeight={"bodyBases"}
+          Demo Aplikasi
+        </Button>
+        <Button
+          size={["secondary", "primary", "primary"]}
+          colorScheme="base.quaternary"
+          textColor="base.secondary.500"
+          _hover={{
+            bg: "#E1E7FF",
+          }}
         >
-          Rasakan kenyamanan dan kemudahan dalam mengelola seluruh proses
-          operasional sekolah...
-        </Text>
-        <HStack spacing={4}>
-          <Button
-            size={["secondary", "primary", "primary"]}
-            textColor={"white"}
-            bg={"#5D5EE7"}
-          >
-            Demo Aplikasi
-          </Button>
-          <Button
-            size={["secondary", "primary", "primary"]}
-            bg={"#C7D2FE"}
-            textColor={"base.secondary.500"}
-          >
-            Download Brosur
-          </Button>
-        </HStack>
-      </VStack>
-    </Flex>
-  );
-};
+          Download Brosur
+        </Button>
+      </HStack>
+    </VStack>
+  </Flex>
+);

@@ -1,10 +1,10 @@
 import { extendTheme } from "@chakra-ui/react";
 
-import { fonts } from "./foundations/fonts";
-import { fontSizes } from "./foundations/fonts";
-import { lineHeights } from "./foundations/fonts";
+import { fonts, fontSizes, lineHeights } from "./foundations/fonts";
 import { colors } from "./foundations/color";
-import { borders } from "./foundations/border";
+import { radii } from "./foundations/border";
+import { textStyles } from "./foundations/layerStyles";
+import { transition } from "./foundations/transitions";
 import { Input } from "./components/input";
 import { Button } from "./components/button";
 import { Container } from "./components/container";
@@ -13,8 +13,10 @@ const overrides: object = {
   colors,
   fonts,
   fontSizes,
-  borders,
+  radii,
   lineHeights,
+  textStyles,
+  transition,
   components: {
     Button,
     Input,
