@@ -9,6 +9,8 @@ import { Section } from "./components/section/Section.component";
 function App() {
   const [offset, setOffset] = useState<number>(0);
 
+  console.log(offset);
+
   useEffect(() => {
     const onScroll = () => setOffset(window.scrollY);
     window.removeEventListener("scroll", onScroll);

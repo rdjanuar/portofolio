@@ -2,7 +2,6 @@ import React from "react";
 import {
   Button,
   Flex,
-  Stack,
   Text,
   Img,
   Drawer,
@@ -12,9 +11,11 @@ import {
   DrawerBody,
   Link,
   useDisclosure,
+  HStack,
 } from "@chakra-ui/react";
 
 import hamburgerMenu from "../../assets/hamburger.png";
+import mainLogo from "../../assets/mainLogo.png";
 
 export const Navbar = ({ offset }: any) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -28,6 +29,7 @@ export const Navbar = ({ offset }: any) => {
       }}
       px={{
         xl: "32",
+        "2xl": "7.3rem",
       }}
       py="4"
       zIndex="sticky"
@@ -40,29 +42,19 @@ export const Navbar = ({ offset }: any) => {
       shadow={`${offset ? "md" : ""}`}
       fontSize="14px"
     >
-      <Stack direction="row" alignItems="center" spacing={2}>
-        <svg
-          width="42"
-          height="42"
-          viewBox="0 0 42 42"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M28 36.75L19.6665 21.4725L26.25 10.5L40.25 36.75H28ZM14 17.5L24.5 36.75H3.5L14 17.5ZM9.625 14C8.46468 14 7.35188 13.5391 6.53141 12.7186C5.71094 11.8981 5.25 10.7853 5.25 9.625C5.25 8.46468 5.71094 7.35188 6.53141 6.53141C7.35188 5.71094 8.46468 5.25 9.625 5.25C10.7853 5.25 11.8981 5.71094 12.7186 6.53141C13.5391 7.35188 14 8.46468 14 9.625C14 10.7853 13.5391 11.8981 12.7186 12.7186C11.8981 13.5391 10.7853 14 9.625 14Z"
-            fill="#0453EF"
-          />
-        </svg>
+      <HStack spacing={2}>
+        <Img src={mainLogo} w="38px" h="52px" objectFit="cover" />
         <Text
           w="50%"
-          lineHeight="bodyBase"
-          fontWeight="semibold"
-          textTransform="uppercase"
+          lineHeight="21px"
+          fontWeight="bold"
+          fontFamily="heading"
+          color="#04032D"
         >
           Berani Sekolah
         </Text>
-      </Stack>
-      <Stack
+      </HStack>
+      <HStack
         fontWeight="semibold"
         lineHeight="bodyBase"
         direction="row"
@@ -86,7 +78,7 @@ export const Navbar = ({ offset }: any) => {
             rounded: "full",
             top: 10,
             left: 4,
-            opacity: 0,
+            opacity: `${offset > 639 && offset < 1094 ? "1" : "0"}`,
             transitionDuration: "ultra-slow",
             transitionProperty: "opacity",
             transitionTimingFunction: "ease-in-out",
@@ -117,7 +109,7 @@ export const Navbar = ({ offset }: any) => {
             rounded: "full",
             top: 10,
             left: 32,
-            opacity: 0,
+            opacity: `${offset >= 1094 ? "1" : "0"}`,
             transitionDuration: "ultra-slow",
             transitionProperty: "opacity",
             transitionTimingFunction: "ease-in-out",
@@ -177,7 +169,7 @@ export const Navbar = ({ offset }: any) => {
         >
           Daftar
         </Button>
-      </Stack>
+      </HStack>
       <Img
         src={hamburgerMenu}
         cursor="pointer"

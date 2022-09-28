@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { ChakraProvider } from "@chakra-ui/react";
 import "@fontsource/inter";
+import "@fontsource/poppins";
 import { BrowserRouter } from "react-router-dom";
 
 import App from "./App";

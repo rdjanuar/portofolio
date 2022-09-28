@@ -1,5 +1,6 @@
 export const fonts: object = {
   body: `'Inter', sans-serif`,
+  heading: `'Poppins', sans-serif`,
 };
 
 export const fontSizes: object = {
@@ -10,6 +11,8 @@ export const fontSizes: object = {
   bodyXl: "2.97rem",
   heading: "1.875rem",
 };
+
+export const fontWeights: object = {};
 
 export const lineHeights: object = {
   xl: "3.62rem",
