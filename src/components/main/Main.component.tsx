@@ -30,7 +30,7 @@ export const Main = () => (
 
     <Img
       src={dashboard}
-      objectFit="cover"
+      objectFit="contain"
       w={{ xl: "625px", "2xl": "813px" }}
       h={{ xl: "445px", "2xl": "100%" }}
       mt={24}
