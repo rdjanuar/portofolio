@@ -51,7 +51,7 @@ export const Navbar = ({ offset }: any) => {
           fontFamily="heading"
           color="#04032D"
         >
-          Berani Sekolah
+          Takut Sekolah
         </Text>
       </HStack>
       <HStack
