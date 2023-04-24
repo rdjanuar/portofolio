@@ -51,7 +51,9 @@ export const Navbar = () => {
           }}
           pos="relative"
           fontSize="16px"
-          textColor={val.href === path ? "white" : "whiteAlpha.500"}
+          textColor={
+            val.href === path ? (colorMode === "dark" ? "white" : "black") : ""
+          }
           as={Link}
           href={val.href ? val.href : ""}
           key={idx}
