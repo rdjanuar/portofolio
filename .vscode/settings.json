@@ -1,0 +1,25 @@
+{
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "editor.tabSize": 2,
+  "editor.fontSize": 12,
+  "workbench.iconTheme": "vscode-icons",
+  "editor.renderWhitespace": "all",
+  "editor.minimap.enabled": true,
+  "editor.renderLineHighlight": "none",
+  "workbench.layoutControl.type": "menu",
+  "workbench.editor.limit.value": 1,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.showTabs": false,
+  "breadcrumbs.enabled": false,
+  "editor.renderControlCharacters": true,
+  "workbench.activityBar.visible": true,
+  "editor.scrollbar.verticalScrollbarSize": 2,
+  "editor.scrollbar.horizontalScrollbarSize": 2,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "workbench.layoutControl.enabled": false,
+  "editor.formatOnPaste": false, // required
+  "editor.formatOnType": false, // required
+  "editor.formatOnSave": true, // optional
+  "editor.formatOnSaveMode": "file" // required to format on save
+}
