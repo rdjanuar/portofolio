@@ -34,12 +34,7 @@ const ChakraUnderline = chakra(motion.span, {
 export const Navbar = () => {
   const { colorMode, setColorMode } = useColorMode();
   const path = usePathname();
-  const linkColor = useColorModeValue(
-    links.map((val) => val.href === path) ? "black" : "white",
-    path === "/" ? "white" : "whiteAlpha.500"
-  );
 
-  console.log(links.map((val) => val.href === path));
   const underlineColor = useColorModeValue("black", "white");
 
   return (
