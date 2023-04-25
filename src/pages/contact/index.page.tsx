@@ -1,4 +1,4 @@
-import { SunIcon } from "@chakra-ui/icons";
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import {
   Box,
   HStack,
@@ -8,6 +8,11 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import Head from "next/head";
+import Image from "next/image";
+
+import githubUniversal from "~/assets/images/githubUniversal.svg";
+import gmail from "~/assets/images/gmail.svg";
+import linkedin from "~/assets/images/linkedin.svg";
 
 const Contact = () => {
   const hoverTextColor = useColorModeValue("blackAlpha.500", "whiteAlpha.500");
@@ -22,9 +27,14 @@ const Contact = () => {
         Reach Me!
       </Heading>
       <Box transform="translateX(20%)">
-        <VStack align="start">
+        <VStack align="start" spacing={4}>
           <HStack>
-            <SunIcon />
+            <Image
+              src={gmail.src as string}
+              width={gmail.width as number}
+              height={gmail.height as number}
+              alt="gmail"
+            />
             <chakra.a
               _hover={{
                 textColor: hoverTextColor,
@@ -36,7 +46,12 @@ const Contact = () => {
             </chakra.a>
           </HStack>
           <HStack>
-            <SunIcon />
+            <Image
+              src={linkedin.src as string}
+              width={32}
+              height={32}
+              alt="linkedin"
+            />
             <chakra.a
               _hover={{
                 textColor: hoverTextColor,
@@ -49,7 +64,12 @@ const Contact = () => {
             </chakra.a>
           </HStack>
           <HStack>
-            <SunIcon />
+            <Image
+              src={githubUniversal.src as string}
+              width={32}
+              height={32}
+              alt="github"
+            />
             <chakra.a
               _hover={{
                 textColor: hoverTextColor,

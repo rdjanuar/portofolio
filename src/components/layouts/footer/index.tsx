@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <Text textAlign="center" fontSize="12px" color={textColor} py={10}>
       {" "}
-      &#169; {new Date().getFullYear()} - Kijan Inspired from{" "}
+      &#169; {new Date().getFullYear()} - Rizky Djanuar Inspired from{" "}
       <chakra.a href="https://saugi.me/" target="_blank" textColor={spanColor}>
         Saugi
       </chakra.a>{" "}
