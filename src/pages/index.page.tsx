@@ -15,19 +15,19 @@ const Home: NextPage = () => {
       </Heading>
       <VStack align="start" spacing={4}>
         <Text fontSize="16px">
-          I am Rizky Djanuar, a front end developer from West Java, Bandung
-          Indonesia.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          mollitia!
         </Text>
         <Text>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sed sint
-          ratione tempore autem libero dolorum, consequuntur harum praesentium
-          repellendus!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus at rem
+          voluptate et incidunt accusantium officiis quibusdam molestiae facilis
+          ad!
         </Text>
         <Text>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui
-          quae quaerat iusto commodi perspiciatis consectetur facere fugiat
-          officiis sequi, doloremque nisi at dolore, perferendis tenetur illo
-          dolor quisquam adipisci.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
+          perferendis totam necessitatibus dolorum quisquam quos cum quibusdam
+          ipsa hic culpa. Nostrum suscipit aperiam sed. Ut tenetur omnis modi
+          amet quod!
         </Text>
         <Text>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium

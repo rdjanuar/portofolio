@@ -18,18 +18,21 @@ const data = [
   {
     id: 1,
     title: "School Management System",
+    href: "#",
     desc: "Aplikasi yang ditujukan untuk memberikan kemudahan dan kenyamanan dalam mengelola data operasional sekolah.",
     tag: ["React JS", "React Query", "Chakra UI", "Zustand"],
   },
   {
     id: 2,
     title: "Dashboard Berani Sekolah",
+    href: "#",
     desc: "Dashboard yang ditujukan untuk memanage permintaan demo aplikasi school management system",
     tag: ["React JS", "React Query", "Chakra UI", "Context"],
   },
   {
     id: 3,
     title: "Landing Page Berani Sekolah",
+    href: "#",
     desc: "Pengenalan produk berani sekolah dan sarana siswa untuk proses PPDB",
     tag: ["React JS", "Tailwind CSS", "Redux Toolkit"],
   },
@@ -94,11 +97,18 @@ const Projects = () => {
         templateColumns="repeat(auto-fill, minmax(200px, 1fr))"
       >
         {data.map((val) => (
-          <Card as="a" href={val.href} target="_blank" key={val.id} bg={bgCard}>
+          <Card
+            as="a"
+            href={val.href}
+            target={val.href === "#" ? "_self" : "_blank"}
+            key={val.id}
+            bg={bgCard}
+          >
             <CardHeader>
               <Image
                 alt="project-image"
                 w="full"
+                h="full"
                 objectFit="cover"
                 src="https://dummyimage.com/300x300/000/fff"
                 rounded="sm"
