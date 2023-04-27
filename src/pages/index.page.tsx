@@ -1,6 +1,7 @@
-import { Heading, Text, VStack } from "@chakra-ui/react";
+import { Heading, Text, VStack, chakra } from "@chakra-ui/react";
 import { type NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
@@ -14,28 +15,28 @@ const Home: NextPage = () => {
         Hi, Kijan here!
       </Heading>
       <VStack align="start" spacing={4}>
-        <Text fontSize="16px">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          mollitia!
+        <Text>
+          Hello, I am a front end developer based in Bandung, West Java
+          Indonesia.
         </Text>
         <Text>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus at rem
-          voluptate et incidunt accusantium officiis quibusdam molestiae facilis
-          ad!
+          I have an interest in technology, especially in the web field
+          development. I am a hard working individual, self learning and not
+          Never been afraid of new challenges
         </Text>
         <Text>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
-          perferendis totam necessitatibus dolorum quisquam quos cum quibusdam
-          ipsa hic culpa. Nostrum suscipit aperiam sed. Ut tenetur omnis modi
-          amet quod!
+          I have 1 year experience in front end development using React JS, Next
+          JS, React Native and some UI Libraries. With 1 year experience in
+          front end development i have been building many applications but most
+          of my project is in dashboard
         </Text>
         <Text>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-          fuga dignissimos consectetur aperiam. Debitis assumenda beatae optio
-          quod necessitatibus voluptate esse numquam. Necessitatibus labore,
-          reiciendis eveniet quidem tempora molestias doloremque rerum qui
-          similique veniam perferendis sed blanditiis pariatur obcaecati
-          expedita.
+          Want to know more about my project ? u can visit my collection{" "}
+          <Link href="/projects">
+            <chakra.span textDecoration="underline" fontWeight="bold">
+              project here
+            </chakra.span>
+          </Link>
         </Text>
       </VStack>
     </>
