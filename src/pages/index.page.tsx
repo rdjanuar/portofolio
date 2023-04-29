@@ -22,7 +22,7 @@ const Home: NextPage = () => {
         <Text>
           I have an interest in technology, especially in the web field
           development. I am a hard working individual, self learning and not
-          Never been afraid of new challenges
+          never been afraid of new challenges
         </Text>
         <Text>
           I have 1 year experience in front end development using React JS, Next
@@ -31,10 +31,10 @@ const Home: NextPage = () => {
           of my project is in dashboard
         </Text>
         <Text>
-          Want to know more about my project ? u can visit my collection{" "}
+          Want to know more about my projects ? u can visit my collection{" "}
           <Link href="/projects">
             <chakra.span textDecoration="underline" fontWeight="bold">
-              project here
+              here
             </chakra.span>
           </Link>
         </Text>
