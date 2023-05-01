@@ -15,7 +15,15 @@ import {
 import Head from "next/head";
 import Image from "next/image";
 
-const data = [
+interface Data {
+  id: number;
+  title: string;
+  href: string;
+  desc: string;
+  tag: string[];
+}
+
+const data: Data[] = [
   {
     id: 1,
     title: "School Management System",
@@ -54,6 +62,7 @@ const data = [
   {
     id: 6,
     title: "Finmod",
+    href: "#",
     desc: "Accounting application for projecting business valuation for the next 5 years",
     tag: ["React JS", "Tailwind CSS", "Redux Toolkit"],
   },
