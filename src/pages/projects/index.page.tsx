@@ -5,14 +5,15 @@ import {
   CardHeader,
   Flex,
   Heading,
-  Image,
   SimpleGrid,
   Tag,
   Text,
   VStack,
+  chakra,
   useColorModeValue,
 } from "@chakra-ui/react";
 import Head from "next/head";
+import Image from "next/image";
 
 const data = [
   {
@@ -79,6 +80,14 @@ const data = [
   },
 ];
 
+const ProjectImages = chakra(Image, {
+  baseStyle: {
+    maxH: "300px",
+    maxW: "300px",
+  },
+  shouldForwardProp: (prop) => ["width", "height", "src", "alt"].includes(prop),
+});
+
 const Projects = () => {
   const bgCard = useColorModeValue("white", "blackAlpha.500");
   const bgTag = useColorModeValue("bisque", "black");
@@ -105,10 +114,12 @@ const Projects = () => {
             bg={bgCard}
           >
             <CardHeader>
-              <Image
+              <ProjectImages
                 alt="project-image"
-                w="full"
-                h="full"
+                width={300}
+                height={300}
+                w="100%"
+                h="100%"
                 objectFit="cover"
                 src="https://dummyimage.com/300x300/000/fff"
                 rounded="sm"
@@ -122,9 +133,9 @@ const Projects = () => {
             </CardBody>
             <CardFooter>
               <Flex gap={2} flexWrap="wrap">
-                {val.tag.map((val, idx) => (
+                {val.tag.map((el, idx) => (
                   <Tag key={idx} bg={bgTag} fontWeight="medium" fontSize="9px">
-                    {val}
+                    {el}
                   </Tag>
                 ))}
               </Flex>
