@@ -97,6 +97,8 @@ const ProjectImages = chakra(Image, {
   shouldForwardProp: (prop) => ["width", "height", "src", "alt"].includes(prop),
 });
 
+// **
+
 const Projects = () => {
   const bgCard = useColorModeValue("white", "blackAlpha.500");
   const bgTag = useColorModeValue("bisque", "black");
