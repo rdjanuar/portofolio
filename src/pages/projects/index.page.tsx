@@ -14,6 +14,12 @@ import {
 } from "@chakra-ui/react";
 import Head from "next/head";
 import Image from "next/image";
+import okr from "~/assets/images/okr.png";
+import pwa from "~/assets/images/pwa.png";
+import landingBeraniSekolah from "~/assets/images/landing_berani_sekolah.png";
+import sms from "~/assets/images/sms.png";
+import minigold from "~/assets/images/minigold.jpeg";
+import finmod from "~/assets/images/finmod.png";
 
 interface Data {
   id: number;
@@ -21,6 +27,7 @@ interface Data {
   href: string;
   desc: string;
   tag: string[];
+  src?: string;
 }
 
 const data: Data[] = [
@@ -28,6 +35,7 @@ const data: Data[] = [
     id: 1,
     title: "School Management System",
     href: "#",
+    src: sms.src,
     desc: "Application intended to provide convenience and comfort in managing school operational data.",
     tag: ["React JS", "React Query", "Chakra UI", "Zustand"],
   },
@@ -42,6 +50,7 @@ const data: Data[] = [
     id: 3,
     title: "Landing Page Berani Sekolah",
     href: "#",
+    src: landingBeraniSekolah.src,
     desc: "Introduction of daring school products and student facilities for the PPDB process",
     tag: ["React JS", "Tailwind CSS", "Redux Toolkit"],
   },
@@ -55,6 +64,7 @@ const data: Data[] = [
   {
     id: 5,
     title: "Sistak PWA",
+    src: pwa.src,
     href: "https://sistak-pwa.whalez.tech/",
     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, fugit!    ",
     tag: ["Next JS", "Typescript", "React Query", "Context", "Chakra UI"],
@@ -62,6 +72,7 @@ const data: Data[] = [
   {
     id: 6,
     title: "Finmod",
+    src: finmod.src,
     href: "#",
     desc: "Accounting application for projecting business valuation for the next 5 years",
     tag: ["React JS", "Tailwind CSS", "Redux Toolkit"],
@@ -69,6 +80,7 @@ const data: Data[] = [
   {
     id: 7,
     title: "Mini Gold Scanner",
+    src: minigold.src,
     href: "https://play.google.com/store/search?q=minigold%20scanner&c=apps&hl=en",
     desc: "Application to scan the authenticity of gold products that are already in circulation",
     tag: ["React Native", "Expo", "Magnus UI"],
@@ -77,6 +89,7 @@ const data: Data[] = [
     id: 8,
     title: "OKR Telkom",
     href: "https://tcuokrdashboard.id/",
+    src: okr.src,
     desc: "Telkom's internal OKR application to interpret and track desired goals and their achievements",
     tag: [
       "Next JS",
@@ -127,10 +140,15 @@ const Projects = () => {
                 alt="project-image"
                 width={300}
                 height={300}
-                w="100%"
-                h="100%"
+                w="250px"
+                h="250px"
                 objectFit="cover"
-                src="https://dummyimage.com/300x300/000/fff"
+                _hover={{
+                  objectFit: "contain",
+                }}
+                src={
+                  val.src ? val.src : "https://dummyimage.com/300x300/000/fff"
+                }
                 rounded="sm"
               />
             </CardHeader>
