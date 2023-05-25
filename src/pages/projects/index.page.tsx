@@ -140,8 +140,14 @@ const Projects = () => {
                 alt="project-image"
                 width={300}
                 height={300}
-                w="250px"
-                h="250px"
+                w={{
+                  base: "100%",
+                  md: "260px",
+                }}
+                h={{
+                  base: "100%",
+                  md: "260px",
+                }}
                 objectFit="cover"
                 _hover={{
                   objectFit: "contain",
