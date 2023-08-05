@@ -57,15 +57,15 @@ const data: Data[] = [
   {
     id: 4,
     title: "Sistak",
-    href: "https://sistak.whalez.tech/",
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, fugit!    ",
+    href: "https://muliajaya.co/",
+    desc: "internal application to manage customer credit loans",
     tag: ["Next JS", "Typescript", "React Query", "Zustand", "Chakra UI"],
   },
   {
     id: 5,
     title: "Sistak PWA",
     src: pwa.src,
-    href: "https://sistak-pwa.whalez.tech/",
+    href: "https://sistak-pwa.whalezz.com/",
     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, fugit!    ",
     tag: ["Next JS", "Typescript", "React Query", "Context", "Chakra UI"],
   },
@@ -88,7 +88,7 @@ const data: Data[] = [
   {
     id: 8,
     title: "OKR Telkom",
-    href: "https://tcuokrdashboard.id/",
+    href: "https://tcuokrdashboard.com/",
     src: okr.src,
     desc: "Telkom's internal OKR application to interpret and track desired goals and their achievements",
     tag: [
