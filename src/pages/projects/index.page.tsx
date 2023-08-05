@@ -100,6 +100,34 @@ const data: Data[] = [
       "Casbin",
     ],
   },
+  {
+    id: 9,
+    title: "Landing Page Bestee Platform",
+    href: "https://bestee.id/",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, fugit!",
+    tag: ["Vue 3", "Nuxt 3", "Vuetify", "SCSS"],
+  },
+  {
+    id: 10,
+    title: "Bestee Console",
+    href: "https://bestee.id/console",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, fugit!",
+    tag: ["Vue 2", "Nuxt 2", "Vuetify 2", "SCSS"],
+  },
+  {
+    id: 11,
+    title: "Bestee Contributor",
+    href: "https://bestee.id/contributor",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, fugit!",
+    tag: ["Vue 2", "Nuxt 2", "Vuetify 2", "SCSS"],
+  },
+  {
+    id: 11,
+    title: "Bestee Mentor",
+    href: "https://bestee.id/mentor",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, fugit!",
+    tag: ["Vue 2", "Nuxt 2", "Vuetify 2", "SCSS"],
+  },
 ];
 
 const ProjectImages = chakra(Image, {
